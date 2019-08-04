@@ -33,6 +33,7 @@ my %removed_funcs = (
     'map:new' => 'map:merge',
     'util:catch' => 'XQuery 3.1 try-catch expression',
     'util:eval-async' => 'none available -- long broken',
+    'util:parse' => 'fn:parse-xml',
     'util:serialize' => 'fn:serialize',
     'validation:validate' => 'more specific validation function',
     'validation:validate-report' => 'more specific validation function',
