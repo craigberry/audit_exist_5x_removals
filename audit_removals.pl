@@ -26,6 +26,9 @@ use File::Find;
 #    false positives have not been 100% successful in previous versions of the
 #    script, and there may well be some cases remaining.
 
+# GitHub repo:
+#    https://github.com/craigberry/audit_exist_5x_removals 
+
 my %removed_funcs = (
     'map' => 'fn:for-each',                # leave off optional fn: namespace
     'map-pairs' => 'fn:for-each-pair',     # leave off optional fn: namespace
