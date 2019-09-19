@@ -1,4 +1,4 @@
-#!perl -w
+#!/usr/bin/env perl
 use strict;
 use File::Spec;
 use File::Find;
@@ -25,6 +25,9 @@ use File::Find;
 #    contexts that are not function calls.  Efforts to prevent false negatives and
 #    false positives have not been 100% successful in previous versions of the
 #    script, and there may well be some cases remaining.
+
+# GitHub repo:
+#    https://github.com/craigberry/audit_exist_5x_removals 
 
 my %removed_funcs = (
     'map' => 'fn:for-each',                # leave off optional fn: namespace
