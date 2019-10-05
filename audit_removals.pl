@@ -96,7 +96,12 @@ my %removed_funcs = (
     'xdb:string-to-permissions' => 'sm:mode-to-octal',
     'xdb:remove-user-from-group' => 'sm:remove-group-member',
     'xdb:set-collection-permissions' => 'sm:chmod sm:chown sm:chgrp',
-    'xdb:set-resource-permissions' => 'sm:chmod sm:chown sm:chgrp'
+    'xdb:set-resource-permissions' => 'sm:chmod sm:chown sm:chgrp',
+    # following are built-ins that may not be caught by the module check below
+    'httpclient:get' => 'EXPath HTTP Client',
+    'httpclient:post' => 'EXPath HTTP Client',
+    'httpclient:put' => 'EXPath HTTP Client',
+    'httpclient:delete' => 'EXPath HTTP Client',
 );
 
 my %removed_modules = (
